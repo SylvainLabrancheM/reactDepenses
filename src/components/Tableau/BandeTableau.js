@@ -1,8 +1,8 @@
 import React from 'react';
 
-import './ChartBar.css';
+import './BandeTableau.css';
 
-const ChartBar = (props) => {
+const BandeTableau = (props) => {
   let barFillHeight = '0%';
 
   if (props.maxValue > 0) {
@@ -22,4 +22,4 @@ const ChartBar = (props) => {
   );
 };
 
-export default ChartBar;
+export default BandeTableau;

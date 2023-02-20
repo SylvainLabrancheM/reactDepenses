@@ -1,7 +1,7 @@
 import React from 'react';
 
-import ChartBar from './ChartBar';
-import './Chart.css';
+import BandeTableau from './BandeTableau';
+import './Tableau.css';
 
 const Chart = (props) => {
   const dataPointValues = props.dataPoints.map(dataPoint => dataPoint.value);
@@ -10,7 +10,7 @@ const Chart = (props) => {
   return (
     <div className='chart'>
       {props.dataPoints.map((dataPoint) => (
-        <ChartBar
+        <BandeTableau
           key={dataPoint.label}
           value={dataPoint.value}
           maxValue={totalMaximum}

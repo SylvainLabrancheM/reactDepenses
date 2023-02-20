@@ -4,7 +4,6 @@ import DepenseObjet from './DepenseObjet';
 import './ListeDepenses.css';
 
 const ListeDepenses = (props) => {
-  {console.log(props.items)}
   if (props.items.length === 0) {
     return <h2 className='expenses-list__fallback'>Aucune dépense trouvée</h2>;
   }

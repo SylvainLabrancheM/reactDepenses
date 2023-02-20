@@ -13,7 +13,7 @@ const Expenses = (props) => {
     setFilteredYear(selectedYear);
   };
 
-  const filteredExpenses = props.items.filter((depense) => {
+  const depensesFiltrees = props.items.filter((depense) => {
     return depense.date.getFullYear().toString() === filteredYear;
   });
 
@@ -24,8 +24,8 @@ const Expenses = (props) => {
           selected={filteredYear}
           onChangementFiltre={filterChangeHandler}
         />
-        <TableauDepenses expenses={filteredExpenses} />
-        <ListeDepenses items={filteredExpenses} />
+        <TableauDepenses depenses={depensesFiltrees} />
+        <ListeDepenses items={depensesFiltrees} />
       </Card>
     </div>
   );
