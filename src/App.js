@@ -6,21 +6,21 @@ import Depenses from './components/Depenses/Depenses';
 const DEPENSES = [
   {
     id: 'e1',
-    title: 'Papier de toilette',
-    amount: 94.12,
+    titre: 'Papier de toilette',
+    montant: 94.12,
     date: new Date(2020, 7, 14),
   },
-  { id: 'e2', title: 'Télévision', amount: 799.49, date: new Date(2021, 2, 12) },
+  { id: 'e2', titre: 'Télévision', montant: 799.49, date: new Date(2021, 2, 12) },
   {
     id: 'e3',
-    title: 'Assurance voiture',
-    amount: 294.67,
+    titre: 'Assurance voiture',
+    montant: 294.67,
     date: new Date(2021, 2, 28),
   },
   {
     id: 'e4',
-    title: 'Nouveau bureau en bois',
-    amount: 450,
+    titre: 'Nouveau bureau en bois',
+    montant: 450,
     date: new Date(2021, 5, 12),
   },
 ];
@@ -36,7 +36,7 @@ const App = () => {
 
   return (
     <div>
-      <NouvelleDepense onAddExpense={ajoutDepenseHandler} />
+      <NouvelleDepense onAjoutDepense={ajoutDepenseHandler} />
       <Depenses items={depenses} />
     </div>
   );
